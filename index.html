@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
 
@@ -18,7 +24,12 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav-desktop">
+        <img
+          src="./images/desktop/image-header.jpg"
+          alt="header"
+          class="image-header"
+        />
         <img src="./images/logo.svg" alt="company-logo" />
         <ul>
           <li>About</li>
@@ -26,30 +37,36 @@
           <li>Projects</li>
           <li><button>Contact</button></li>
         </ul>
+        <h1>We are creatives</h1>
+        <img src="./images/icon-arrow-down.svg" alt="arrow" class="img-arrow" />
       </nav>
-      <img
-        src="./images/desktop/image-header.jpg"
-        alt="hero-image"
-        class="img-header"
-      />
-      <h1>We are creatives</h1>
-      <img src="./images/icon-arrow-down.svg" alt="arrow" class="img-arrow" />
+      <nav class="nav-mobile">
+        <img src="./images/logo.svg" alt="company-logo" />
+        <ul>
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li><button>Contact</button></li>
+        </ul>
+        <h1>We are creatives</h1>
+        <img src="./images/icon-arrow-down.svg" alt="arrow" class="img-arrow" />
+      </nav>
     </header>
     <main>
       <section class="main-desktop">
-        <div>
+        <div class="transform">
           <h2>Transform your brand</h2>
           <p>
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <button>Learn more</button>
+          <button>LEARN MORE</button>
         </div>
         <img
           src="./images/desktop/image-transform.jpg"
           alt="transform"
-          class="img"
+          class="img-transform"
         />
         <img
           src="./images/desktop/image-stand-out.jpg"
