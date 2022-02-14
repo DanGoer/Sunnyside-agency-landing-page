@@ -18,6 +18,10 @@ p {
 }
 header {
 }
+
+.main-mobile {
+  display: none;
+}
 .nav-desktop {
   position: relative;
 }
@@ -90,4 +94,37 @@ h2 {
 .button-yellow:hover::before,
 .button-red:hover::before {
   opacity: 1;
+}
+
+.graphic-design,
+.photography {
+  position: relative;
+}
+.graphic-design div,
+.photography div {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  text-align: center;
+  width: 330px;
+  font-size: 18px;
+  color: hsl(167, 40%, 24%);
+}
+.photography div {
+  color: hsl(198, 62%, 26%);
+}
+.graphic-design h2,
+.photography h2 {
+  font-size: 28px;
+}
+.graphic-design p,
+.photography p {
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+@media (max-width: 375px) {
+  .main-desktop {
+    display: none;
+  }
 }
