@@ -33,24 +33,61 @@ header {
   max-height: 1740px;
 }
 
-.transform {
+.transform,
+.standout {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.standout p,
+h2,
 .transform p,
 h2 {
   max-width: 400px;
 }
+.standout button,
 .transform button {
+  position: relative;
   font-family: "Fraunces", serif;
   font-weight: 700;
   border: none;
   background-color: inherit;
   padding: 0 5px;
+  align-self: flex-start;
+  margin: 15px 0 0 160px;
   outline: inherit;
-  border-bottom: solid 5px hsl(51, 100%, 49%);
 }
-.img-transform {
+
+.button-yellow::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  width: 105px;
+  height: 9px;
+  border-radius: 8px;
+  opacity: 0.3;
+  transform: skew(-12deg) translateX(-50%);
+  background: hsl(51, 100%, 49%);
+  z-index: -1;
+}
+
+.button-red::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  width: 105px;
+  height: 9px;
+  border-radius: 8px;
+  opacity: 0.3;
+  transform: skew(-12deg) translateX(-50%);
+  background: hsl(7, 99%, 70%);
+  z-index: -1;
+}
+
+.button-yellow:hover::before,
+.button-red:hover::before {
+  opacity: 1;
 }
