@@ -21,6 +21,17 @@ p {
   color: hsl(212, 27%, 19%);
   line-height: 150%;
 }
+
+header nav h1 {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  font-weight: 900;
+  font-size: 70px;
+  letter-spacing: 5px;
+  color: white;
+  text-transform: uppercase;
+}
 header {
 }
 
@@ -35,6 +46,55 @@ header {
 .image-header {
   max-width: 1440px;
   top: 0;
+  z-index: 1;
+}
+
+.header-logo {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+}
+
+.nav-links {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 3%;
+  left: 60%;
+}
+
+.nav-desktop button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 7px;
+  cursor: pointer;
+  border-radius: 24px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.nav-links div {
+  margin: 0 20px 0 20px;
+}
+
+.img-arrow {
+  position: absolute;
+  top: 43%;
+  left: 41%;
+  width: 40px;
+  height: 130px;
+}
+
+.nav-desktop {
+  position: relative;
 }
 
 .main-desktop {
