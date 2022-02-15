@@ -39,7 +39,7 @@ header {
 
 .main-desktop {
   display: grid;
-  grid-template: 1fr 1fr 1.05fr / 1fr 1fr;
+  grid-template: 1fr 1fr 1.01fr / 1fr 1fr;
   max-width: 1440px;
 }
 
@@ -135,6 +135,7 @@ header {
   justify-content: center;
   align-items: center;
   max-width: 1440px;
+  background-color: rgba(255, 251, 248, 255);
 }
 .testimonials h2 {
   font-size: 20px;
@@ -165,12 +166,13 @@ header {
 
 .testimonials div div p {
   font-size: 18px;
+  margin-bottom: 40px;
 }
 
 .testimonials div div h3 {
   font-size: 20px;
   font-weight: 900;
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .testimonials div div h4 {
@@ -178,6 +180,45 @@ header {
   font-size: 12px;
   font-weight: 700;
   color: hsl(210, 4%, 67%);
+  margin: 10px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-direction: row;
+  max-width: 1440px;
+}
+
+.image-gallery img {
+  max-width: 25%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(144, 212, 197, 255);
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+}
+
+footer img {
+  filter: invert(52%) sepia(19%) saturate(951%) hue-rotate(118deg)
+    brightness(89%) contrast(83%);
+  width: 124px;
+  height: 24px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+  color: hsl(168, 34%, 41%);
+  font-weight: 700;
+  margin: 20px 0 20px 0;
+}
+
+footer div div {
+  margin: 0 20px 0 20px;
 }
 
 @media (max-width: 375px) {
