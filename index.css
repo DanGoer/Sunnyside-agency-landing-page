@@ -34,10 +34,6 @@ header nav h1 {
   text-transform: uppercase;
 }
 
-.main-mobile {
-  display: none;
-}
-
 .nav-mobile {
   position: relative;
   display: none;
@@ -117,6 +113,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 251, 248, 255);
 }
 .standout p,
 .standout h2,
@@ -148,7 +145,7 @@ nav {
   opacity: 0.3;
   transform: skew(-12deg) translateX(-50%);
   background: hsl(51, 100%, 49%);
-  z-index: -1;
+  z-index: 10;
 }
 
 .button-red::before {
@@ -162,7 +159,7 @@ nav {
   opacity: 0.3;
   transform: skew(-12deg) translateX(-50%);
   background: hsl(7, 99%, 70%);
-  z-index: -1;
+  z-index: 10;
 }
 
 .button-yellow:hover::before,
@@ -304,9 +301,102 @@ footer div img:hover {
   filter: brightness(0) invert(1);
   cursor: pointer;
 }
+/* Mobile section */
 
+.nav-mobile .image-header {
+  max-width: 375px;
+  top: 0;
+  z-index: 1;
+}
+
+#burger {
+  position: absolute;
+  top: 5%;
+  left: 88%;
+}
+
+.main-mobile {
+  display: none;
+  flex-direction: column;
+  max-width: 375px;
+}
+
+.main-mobile .transform,
+.main-mobile .standout {
+  text-align: center;
+}
 @media (max-width: 375px) {
+  .main-mobile {
+    display: flex;
+  }
+
   .main-desktop {
     display: none;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .img-arrow {
+    top: 270px;
+    left: 170px;
+  }
+
+  header nav h1 {
+    text-align: center;
+    top: 20%;
+    left: 0%;
+    font-size: 40px;
+  }
+
+  .header-logo {
+    top: 5%;
+    left: 4%;
+  }
+
+  .standout button,
+  .transform button {
+    margin: 20px 0 45px 135px;
+  }
+
+  .standout p,
+  .standout h2,
+  .transform p,
+  .transform h2 {
+    max-width: 320px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  .transform p,
+  .standout p {
+    line-height: 180%;
+    font-size: 18px;
+    opacity: 0.9;
+  }
+  .photography img,
+  .graphic-design img {
+    width: 375px;
+  }
+  .graphic-design div,
+  .photography div {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    text-align: center;
+    width: 330px;
+    font-size: 18px;
+    color: hsl(167, 40%, 24%);
   }
 }
