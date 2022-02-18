@@ -402,4 +402,28 @@ footer div img:hover {
   .photography {
     margin-bottom: -3px;
   }
+
+  .testimonials div {
+    flex-direction: column;
+    margin-bottom: 80px;
+    max-width: 350px;
+  }
+
+  .testimonials h2 {
+    margin: 70px 0 60px 0;
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+
+  .testimonials div div p {
+    font-size: 17px;
+    margin: 0 0 20px 0;
+    line-height: 180%;
+  }
+
+  .testimonials div div h4 {
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 70px;
+  }
 }
