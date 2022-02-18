@@ -171,6 +171,7 @@ nav {
 .photography {
   position: relative;
 }
+
 .graphic-design div,
 .photography div {
   position: absolute;
@@ -391,12 +392,14 @@ footer div img:hover {
   }
   .graphic-design div,
   .photography div {
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    text-align: center;
-    width: 330px;
-    font-size: 18px;
-    color: hsl(167, 40%, 24%);
+    top: 60%;
+    left: 5%;
+    font-size: 22px;
+    line-height: 170%;
+  }
+
+  .graphic-design,
+  .photography {
+    margin-bottom: -3px;
   }
 }
