@@ -310,10 +310,41 @@ footer div img:hover {
   z-index: 1;
 }
 
-#burger {
+#burger-menu {
   position: absolute;
   top: 5%;
   left: 88%;
+}
+
+#menu {
+  top: 100px;
+  left: 20px;
+  position: absolute;
+  width: 340px;
+  height: 400px;
+  background-color: rgba(255, 251, 248, 255);
+}
+
+.menu-nav:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -40px;
+  right: auto;
+  top: -8px;
+  bottom: auto;
+}
+
+.menu-nav:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -20px;
+  right: auto;
+  top: 0px;
+  bottom: auto;
 }
 
 .main-mobile {
